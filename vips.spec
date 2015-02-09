@@ -21,8 +21,8 @@ BuildRequires:	pkgconfig(cfitsio)
 BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	pkgconfig(libpng)
-BuildRequires:	pkgconfig(libtiff-4)
-BuildRequires:	pkgconfig(libwebp)
+BuildRequires:	libtiff-devel
+#BuildRequires:	pkgconfig(libwebp)
 BuildRequires:	pkgconfig(libexif)
 BuildRequires:	pkgconfig(openslide)
 
