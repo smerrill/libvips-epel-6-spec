@@ -9,7 +9,7 @@ URL:		http://www.vips.ecs.soton.ac.uk/
 Source0:	http://www.vips.ecs.soton.ac.uk/supported/7.36/%{name}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gobject-introspection-1.0)
+#BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(MagickWand)
@@ -121,14 +121,14 @@ rm -rf ${RPM_BUILD_ROOT}%{_datadir}/doc/vips
 %files -f vips7.36.lang
 %doc AUTHORS NEWS THANKS TODO COPYING ChangeLog
 %{_libdir}/*.so.35*
-%{_libdir}/girepository-1.0
+#%{_libdir}/girepository-1.0
 
 
 %files devel
 %{_includedir}/vips
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
-%{_datadir}/gir-1.0
+#%{_datadir}/gir-1.0
 %{_datadir}/gtk-doc
 
 
